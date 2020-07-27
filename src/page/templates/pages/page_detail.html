@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+  <main id="main" style="margin-top: 170px;">
+{% for data in page_detail %}
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>{{data.title}}</h2>
+          <ol>
+            <li><a href="{{ SITE_URL }}">Home</a></li>
+            <li>{{data.title}}</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page" style="min-height: 300px;">
+      <div class="container">
+        <p>
+            {{data.content | safe }}
+        </p>
+      </div>
+    </section>
+{% endfor %}
+  </main><!-- End #main -->
+{% endblock body %}
+

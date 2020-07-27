@@ -1,0 +1,40 @@
+{% load static %}
+{% load i18n %}
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <i class="icofont-clock-time"></i> Monday - Saturday, 8AM to 10PM
+
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="icofont-phone"></i> Call us now +971 2 658 44 96
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center " >
+      <a href="{{ SITE_URL }}">
+        <img src="{% static 'site_static/img/lablogo-f.png'%}" alt="">
+      </a>
+      <!-- Uncomment below if you prefer to use an image logo 
+     <h1 class="logo mr-auto"><a href="{{ SITE_URL }}">RoyaDent</a></h1>
+-->
+      <nav class="nav-menu d-none d-lg-block" style="margin-left: 80px;">
+        <ul>
+          <li class="active"><a href="{{ SITE_URL }}">Home</a></li>
+          <li><a href="http://127.0.0.1:8000#about">About</a></li>
+          <li><a href="http://127.0.0.1:8000#services">Services</a></li>
+          <li><a href="http://127.0.0.1:8000#departments">Technology</a></li>
+          <li><a href="http://127.0.0.1:8000#doctors">Staff</a></li>
+          <li><a href="http://127.0.0.1:8000#gallery">Gallery</a></li>
+          <li><a href="http://127.0.0.1:8000#contact">contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Send a</span> Case</a>
+
+    </div>
+  </header><!-- End Header -->
